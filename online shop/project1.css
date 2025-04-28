@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{ font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+}
+body{
+background-color: rgb(6, 10, 43);
+display: flex;
+}
+.img-box{
+   height: 50px;
+   width: 50px; 
+   border-radius: 50%;
+   overflow: hidden; 
+   border: 3px solid white;  
+   flex-shrink: 0; 
+}
+.img-box img{
+    width: 100%;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: larger;
+    text-transform: capitalize;
+}
+ .menu{
+    background-color:rgba(50, 15, 83, 0.904) ;
+    height: 100vh;
+    width: 60px;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+    }
+    .menu:hover{
+        width: 350px;
+    }
+    ul{
+        list-style: none;
+        position: relative;
+        height: 95%;
+    }
+    ul li a{
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        transition: .5s;
+    }
+    ul li a:hover , .cards .card:hover ,td:hover{
+        background-color: rgba(163, 162, 162, 0.349);
+    }
+    .logout{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .logout a{ background-color: red;}
+    ul li a i {
+        font-size: 25px;
+    }
+   .container{
+    background-color: rgb(6, 10, 43);
+    width: 100%;
+    margin: 2px;
+   }
+   .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(87, 32, 139, 0.904);
+    border: 8px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    margin: 5px 1px;
+   }
+   .cards{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+   }
+   .card{
+    background-color: rgba(50, 15, 83, 0.904);
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   }
+   .card i{
+    font-size: 40px;
+   }
+   .data{
+    text-align: center;
+   }
+   .data span{
+    font-size: 30px;
+   }
+   table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+   
+   }
+   td,th{
+    background-color:rgba(50, 15, 83, 0.904) ;
+    height: 40px;
+    border-radius: 8px;
+
+   }
+ th{
+  background-color: rgba(87, 32, 139, 0.904);
+ }
